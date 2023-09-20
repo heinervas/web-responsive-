@@ -1,0 +1,91 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px; /* Ancho máximo para evitar que se extienda demasiado en pantallas grandes */
+    margin: 0 auto; /* Centrar en pantalla */
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Estilos para botones transparentes */
+
+.transparent-button {
+    background: none;
+    border: none;
+    color: #007bff; /* Azul */
+    cursor: pointer;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.transparent-button:hover {
+    text-decoration: none;
+}
+
+.blue-transparent-button {
+    background: none;
+    border: none;
+    color: #007bff; /* Azul */
+    cursor: pointer;
+    text-decoration: underline;
+    margin-right: 10px;
+}
+
+.blue-transparent-button:hover {
+    text-decoration: none;
+}
+
+.red-transparent-button {
+    background: none;
+    border: none;
+    color: #FF5733; /* Rojo */
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.red-transparent-button:hover {
+    text-decoration: none;
+}
+
+/* Estilos para campos de entrada */
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.input-container input, .input-container select, .input-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.input-container input:focus, .input-container select:focus, .input-container textarea:focus {
+    border-color: #4CAF50; /* Verde biche */
+    outline: none;
+}
+
+/* Estilos para mostrar campos de entrada al hacer clic en "Editar Información" */
+
+#toggleForm ~ .input-container {
+    display: block;
+}
+
